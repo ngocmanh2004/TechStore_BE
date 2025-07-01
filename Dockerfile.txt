@@ -1,0 +1,19 @@
+# Dùng image .NET SDK để build
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /app
+
+# Copy csproj và restore
+COPY *.sln .
+COPY TechStore_BE/*.csproj ./TechStore_BE/
+RUN dotnet restore
+
+# Copy toàn bộ mã nguồn và build
+COPY . .
+WORKDIR /app/TechStore_BE
+RUN dotnet publish -c Release -o out
+
+# Dùng image runtime nhẹ hơn để chạy app
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
+WORKDIR /app
+COPY --from=build /app/TechStore_BE/out ./
+ENTRYPOINT ["dotnet", "TechStore_BE.dll"]
