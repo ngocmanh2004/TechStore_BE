@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.12.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NuGet.Packaging" Version="6.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\airpodspro.jpeg" />
+    <None Include="wwwroot\images\ankerpowercore.jpeg" />
+    <None Include="wwwroot\images\asusrog.jpg" />
+    <None Include="wwwroot\images\dellxps13.jpeg" />
+    <None Include="wwwroot\images\g502hero.jpeg" />
+    <None Include="wwwroot\images\galaxyS23.jpg" />
+    <None Include="wwwroot\images\galaxytabs8.jpeg" />
+    <None Include="wwwroot\images\hpspectre.jpeg" />
+    <None Include="wwwroot\images\inspiron15.jpeg" />
+    <None Include="wwwroot\images\ipadpro.jpeg" />
+    <None Include="wwwroot\images\iphone15.jpeg" />
+    <None Include="wwwroot\images\matepad.jpeg" />
+    <None Include="wwwroot\images\mi11.jpeg" />
+    <None Include="wwwroot\images\mxmaster3.jpeg" />
+    <None Include="wwwroot\images\p50pro.jpeg" />
+    <None Include="wwwroot\images\pavilion14.jpeg" />
+    <None Include="wwwroot\images\thinkpadx1.jpeg" />
+    <None Include="wwwroot\images\tranhalinh.jpg" />
+    <None Include="wwwroot\images\vivobook15.jpeg" />
+    <None Include="wwwroot\images\xiaomipad.jpeg" />
+    <None Include="wwwroot\images\yogaslim7.jpeg" />
+  </ItemGroup>
+
+</Project>
